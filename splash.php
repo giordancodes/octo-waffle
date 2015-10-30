@@ -68,37 +68,39 @@ include('headerSplash.php');  ?>
 </section>
 
 <section class="feature">
-	<h4>Don't wait! Get started on your path to wellness today.</h4>
-	<h2>Featured Plans</h2>
-	
-	<!-- shows 3 featured plans -->
-
-	<?php 
-
-		$featureQuery = new WP_Query(
-				array(
-						'posts_per_page' => 3,
-						'post_type' => 'feature',
-						'post_not_in' => array( $post->ID )
-					)
-			);
-
-	 ?>
-
-	 <?php 
-
-	 	if ($featureQuery->have_posts()) : 
-
-	  ?>
-			<article class="featureStyles">
-			<?php while ($featureQuery->have_posts()) : $featureQuery->the_post(); ?>
-			<img src="<?php the_field('image') ?>" alt="">
-			<h2><?php the_title() ?></h2>
-			<p><?php the_field('description') ?></p>
-			<?php endwhile; ?>
-			</article>
-
-		<?php endif; ?>
+	<div class="featureDiv container column">
+		<h4>Don't wait! Get started on your path to wellness today.</h4>
+		<h2>Featured Plans</h2>
+		
+		<!-- shows 3 featured plans -->
+		
+		<?php 
+		
+			$featureQuery = new WP_Query(
+					array(
+							'posts_per_page' => 3,
+							'post_type' => 'feature',
+							'post_not_in' => array( $post->ID )
+						)
+				);
+		
+		 ?>
+		
+		 <div class="featureFlex row"><?php 
+		 	
+		 		if ($featureQuery->have_posts()) : 
+		 	
+		 	 ?>
+		 				<?php while ($featureQuery->have_posts()) : $featureQuery->the_post(); ?>
+		 				<article class="featureStyles column">
+		 				<img src="<?php the_field('image') ?>" alt="">
+		 				<h2><?php the_title() ?></h2>
+		 				<p><?php the_field('description') ?></p>
+		 				</article>
+		 				<?php endwhile; ?>
+		 	
+		 			<?php endif; ?></div>
+	</div>
 	
 </section>
 

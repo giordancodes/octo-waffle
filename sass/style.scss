@@ -238,7 +238,8 @@ Header
 
 .serviceSection {
 	display: flex;
-	width: 33%;
+	text-align: center;
+	// width: 33.33%;
 }
 
 .services {
@@ -414,7 +415,7 @@ section.body{
 	background: white;
 	display: flex;
 	flex-wrap: wrap;
-	padding: 10rem 5rem;
+	padding: 10rem 0;
 }
 
 .descItem{
@@ -429,17 +430,34 @@ section.body{
 	}
 }
 
+.descImg{
+	padding: 3rem;
+}
+
 article {
 	display: flex;
+	flex-wrap: wrap;
 	background: white;
 	border-radius: 1em;
-	margin: 1em 0;
-
+	margin: 1em;
+	text-align: center;
+	width: calc(33.33% - 2em);
 }
 
 section.feature{
 	background: $lightblue;
-	padding: 20rem;
+	padding: 10rem;
+}
+
+.featureStyles{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.featureFlex{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 
 section.book{
