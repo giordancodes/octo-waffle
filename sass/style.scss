@@ -144,6 +144,10 @@ p {
 
 }
 
+footer{
+	background: $seafoam;
+}
+
 footer p {
 
 	color: white;
@@ -463,7 +467,15 @@ section.latest{
 }
 
 section.testimonials{
-	padding: 15rem 0;
+	padding: 5rem 10rem;
+	text-align: center;
+	img{
+		border-radius: 50%;
+		max-width: 400px;
+	}
+	p{
+		padding: 0 5rem;
+	}
 }
 
 section.closing{
@@ -472,4 +484,5 @@ section.closing{
 }
 .gallery-cell {
 	width: 100%;
+	// padding: 10rem;
 }

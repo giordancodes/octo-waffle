@@ -149,36 +149,36 @@ include('headerSplash.php');  ?>
 
 </section>
 
-<section class="testimonials js-flickity"   data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true}'>
+<section class="testimonials">
 	
-	<?php 
-
-		$testimonialQuery = new WP_Query(
-				array(
-						'posts_per_page' => -1,
-						'post_type' => 'testimonial',
-						'post_not_in' => array( $post->ID )
-					)
-			);
-
-	 ?>
-
-	 <?php 
-
-	 	if ($testimonialQuery->have_posts()) : 
-
-	  ?>
-
-			
-			<?php while ($testimonialQuery->have_posts()) : $testimonialQuery->the_post(); ?>
-			<div class="gallery-cell">
-				<img src="<?php the_field('testimonialImage') ?>" alt="">
-				<h2><?php the_title() ?></h2>
-				<p><?php the_field('testimonialQuote') ?></p>
-			</div>
-			<?php endwhile; ?>
-
-		<?php endif; ?>
+	<div class='testimonialGallery js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true}'><?php 
+		
+			$testimonialQuery = new WP_Query(
+					array(
+							'posts_per_page' => -1,
+							'post_type' => 'testimonial',
+							'post_not_in' => array( $post->ID )
+						)
+				);
+		
+		 ?>
+		
+		 <?php 
+		
+		 	if ($testimonialQuery->have_posts()) : 
+		
+		  ?>
+		
+				
+				<?php while ($testimonialQuery->have_posts()) : $testimonialQuery->the_post(); ?>
+				<div class="gallery-cell">
+					<img src="<?php the_field('testimonialImage') ?>" alt="">
+					<h2><?php the_title() ?></h2>
+					<p><?php the_field('testimonialQuote') ?></p>
+				</div>
+				<?php endwhile; ?>
+		
+			<?php endif; ?></div>
 
 </section>
 
