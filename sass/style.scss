@@ -146,16 +146,28 @@ p {
 
 footer{
 	background: $seafoam;
+	h1{
+		text-align: left;
+		font-size: 6rem;
+	}
+}
+
+.footerFlex{
+	align-items: flex-start;
+	justify-content: space-between;
 }
 
 footer p {
 
 	color: white;
+	line-height: 3rem;
+	font-size: 2rem;
 
 }
 
-footer.titles {
-	
+footer .titles {
+	text-transform: uppercase;
+	font-size: 1.6rem;
 
 }
 
@@ -467,6 +479,7 @@ section.latest{
 }
 
 section.testimonials{
+	background: url(../images/patternBackground@2x.png);
 	padding: 5rem 10rem;
 	text-align: center;
 	img{

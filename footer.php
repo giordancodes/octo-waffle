@@ -1,5 +1,5 @@
 <footer>
-  <div class="container column">
+  <div class="container row footerFlex">
     <?php 
 
 		$footerQuery = new WP_Query(
@@ -19,13 +19,19 @@
 	  ?>
 
 			<?php while ($footerQuery->have_posts()) : $footerQuery->the_post(); ?>
-			<p><?php the_field('footer-logo')?></p>
-			<p><?php the_field('tag-copy')?></p>
-			<p class='titles'><?php the_field('contact-title')?></p>
-			<p><?php the_field('contact-email')?></p>
-			<p><?php the_field('address-phone')?></p>
-			<p class='titles'><?php the_field('subscribe-title')?></p>
-			<p><?php the_field('subscribe-info')?></p>
+			<div class="leftThird">
+				<h1><?php the_field('footer-logo')?></h1>
+				<p><?php the_field('tag-copy')?></p>
+			</div>
+			<div class="centerThird">
+				<p class='titles'><?php the_field('contact-title')?></p>
+				<p><?php the_field('contact-email')?></p>
+				<p><?php the_field('address-phone')?></p>
+			</div>
+			<div class="rightThird">
+				<p class='titles'><?php the_field('subscribe-title')?></p>
+				<p><?php the_field('subscribe-info')?></p>
+			</div>
 			<?php endwhile; ?>
 
 		<?php endif; ?>
