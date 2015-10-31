@@ -59,7 +59,7 @@ include('headerSplash.php');  ?>
 							<img src="<?php the_field('desc-image') ?>" alt="">
 						</div>
 					<h2><?php the_title() ?></h2>
-					<p><?php the_field('desc-summary') ?></p>
+					<p class="desc-summary"><?php the_field('desc-summary') ?></p>
 				</div>
 					<?php endwhile; ?>
 		
@@ -153,7 +153,9 @@ include('headerSplash.php');  ?>
 
 </section>
 
-<section class="testimonials">
+<section class="testimonials" style="background: 
+<?php  ?>
+">
 	
 	<div class='testimonialGallery js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": false, "wrapAround": true, "autoPlay": 7000}'><?php 
 		
