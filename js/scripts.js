@@ -6,8 +6,16 @@ $(function(){
 
 	$( '.hamburger' ).on( 'click', function(e){
 		e.preventDefault();
-		$( '#hiddenNav' ).removeClass('visible').addClass('invisible');
+		$( '#hiddenNav' ).removeClass('invisible').addClass('visible');
 		
 	});
+
+	$( '#navX' ).on( 'click', function(e){
+		e.preventDefault();
+		$( '#hiddenNav' ).removeClass('visible').addClass('invisible').fadeOut();
+		
+	});
+
+
 
 });

@@ -1,7 +1,7 @@
 <?php get_header();  ?>
 
-<div class="main">
-  <div class="container">
+<div class="main container">
+  <div class="leftSide">
 
     <div class="content">
       <?php // Start the loop ?>
@@ -13,9 +13,9 @@
       <?php endwhile; // end the loop?>
     </div> <!-- /,content -->
 
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
+    <?php get_sidebar(); ?>
 </div> <!-- /.main -->
-
+<div class="latest-single"><?php include('latest.php') ?></div>
 <?php get_footer(); ?>

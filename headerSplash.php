@@ -21,6 +21,6 @@
 <body <?php body_class(); ?>>
 
 <div id="hiddenNav" class="invisible">
-<div id="navX">x</div>
+<div id="navX"><a href="#">x</a></div>
   <?php wp_nav_menu( ) ?>
 </div>

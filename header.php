@@ -36,6 +36,6 @@
       </div>
     </div>
    </div>
-  </div> <!-- /.container -->
+  </div> <!-- /.vanilla -->
 </header><!--/.header-->
 

@@ -805,6 +805,7 @@ header .vanilla{
 	justify-content: center;
 	background: rgba(0,0,0,0.8);
 	z-index: 999;
+	transition: ease-in-out .8s opacity;
 	.menu{
 		ul{
 			display: flex;
@@ -815,7 +816,7 @@ header .vanilla{
 			align-items: center;
 			li{
 				padding: 2rem 0;
-				font-size: 4rem;
+				font-size: 4rem
 			}
 		}
 	}
@@ -830,8 +831,10 @@ header .vanilla{
 
 .visible{
 	visibility: visible;
+	opacity: 1;
 }
 
 .invisible{
 	visibility: hidden;
+	opacity: 0;
 }
