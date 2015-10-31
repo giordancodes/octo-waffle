@@ -1,14 +1,14 @@
 <?php get_header(); ?>
 
-<div class="main">
-  <div class="container">
+<div class="main container">
+  <div class="leftSide">
 
     <div class="content">
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
         <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
          <?php the_post_thumbnail('large'); ?>
-          <h1 class="entry-title"><?php the_title(); ?></h1>
+          <h2 class="entry-title"><?php the_title(); ?></h2>
 
           <div class="entry-meta">
             <?php hackeryou_posted_on(); ?>
@@ -23,7 +23,7 @@
           </div><!-- .entry-content -->
 
           <div class="entry-utility">
-            <?php hackeryou_posted_in(); ?>
+            <!-- <?php hackeryou_posted_in(); ?> -->
             <?php edit_post_link( 'Edit', '<span class="edit-link">', '</span>' ); ?>
           </div><!-- .entry-utility -->
         </div><!-- #post-## -->
@@ -39,9 +39,9 @@
 
     </div> <!-- /.content -->
 
-    <?php get_sidebar(); ?>
 
   </div> <!-- /.container -->
+    <?php get_sidebar(); ?>
 </div> <!-- /.main -->
 
 <?php get_footer(); ?>
