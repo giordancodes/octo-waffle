@@ -44,6 +44,5 @@
     <?php get_sidebar(); ?>
 </div> <!-- /.main -->
 
-<?php include('latest.php') ?>
-
+<div class="latest-single"><?php include('latest.php') ?></div>
 <?php get_footer(); ?>
