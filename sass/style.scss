@@ -33,6 +33,7 @@ $orange: #FD6900;
 $lightblue: #CDE5ED;
 $darkgrey: #3C3D41;
 $lightgrey: #656B6F;
+$lightergrey: #E8E8E8;
 $red: #D0021B;
 
 
@@ -490,13 +491,18 @@ section.latest{
 	flex-wrap: wrap;
 	margin: 0 auto;
 	li{
-		width: 33.33%;
+		width: calc(33.33% - 2rem);
+		border-radius: 1em;
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		border: 1px solid $lightergrey;
+		&:nth-child(2){
+			margin: 0 2rem;
+		}
 		img{
 			display: block;
 		}
@@ -512,10 +518,16 @@ section.testimonials{
 	text-align: center;
 	img{
 		border-radius: 50%;
-		max-width: 400px;
+		max-width: 200px;
+		margin-bottom: 2rem;
+	}
+	h2{
+		margin-bottom: 2rem;
 	}
 	p{
 		padding: 0 5rem;
+		width: 50%;
+		margin: 0 auto;
 	}
 }
 

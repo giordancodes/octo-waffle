@@ -153,7 +153,7 @@ include('headerSplash.php');  ?>
 
 <section class="testimonials">
 	
-	<div class='testimonialGallery js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": true, "wrapAround": true}'><?php 
+	<div class='testimonialGallery js-flickity' data-flickity-options='{ "cellAlign": "left", "contain": false, "wrapAround": true, "autoPlay": 7000}'><?php 
 		
 			$testimonialQuery = new WP_Query(
 					array(
@@ -184,7 +184,7 @@ include('headerSplash.php');  ?>
 
 </section>
 
-<section class="closing">
+<section class="closing container">
 	<h5>Start working on your body today; with our individual fitness program, in less than 90 days you will see a completely different person in the mirror!</h5>
 	<button class="btn secondBtn">Get in Touch</button>
 </section>
