@@ -1,7 +1,7 @@
 $(function(){
 	//your jQuery here
 
-// flickity
-
+// datepicker
+	$( '#bookDate' ).datepicker();
 
 });

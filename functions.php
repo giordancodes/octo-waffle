@@ -70,6 +70,8 @@ function hackeryou_scripts() {
     null, // version number
     true //load in footer
   );
+
+  wp_enqueue_script( 'jquery-ui-datepicker', $deps = array('jquery'));
 }
 
 add_action( 'wp_enqueue_scripts', 'hackeryou_scripts');
