@@ -122,7 +122,7 @@ include('headerSplash.php');  ?>
 
 </section>
 
-<section class="latest">
+<section class="latest container">
 	<h2>Latest from the blog</h2>
 	
 	<ul class="blogLatest row">
@@ -146,7 +146,6 @@ include('headerSplash.php');  ?>
 		<?php wp_reset_postdata(); ?>
 
 	<?php else:  ?>
-		[stuff that happens if there aren't any posts]
 	<?php endif; ?>
 
 </ul>

@@ -551,10 +551,14 @@ section.book{
 }
 
 section.latest{
-	padding: 15rem;
+	padding: 5rem;
 	background: white;
+	justify-content: center;
 	h2{
 		padding: 3rem 0;
+	}
+	p{
+		padding: 0 2.5rem;
 	}
 }
 

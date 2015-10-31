@@ -1,6 +1,10 @@
 <footer>
 <div class="footerBtn">
+
+
 	<button class="mainBtn btn">Contact Form</button>
+
+
 </div>
   <div class="container row footerFlex">
     <?php 
