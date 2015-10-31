@@ -207,7 +207,10 @@ Buttons
 	line-height: 13px;
 	text-transform: uppercase;
 	border-radius: 50%;
-	padding: 1.8em;
+	// padding: 1.8em;
+	height: 5rem;
+	width: 5rem;
+	text-align: center;
 	border: 1px solid white;
 	color: white;
 	transition: color .8s, background .8s;
@@ -492,7 +495,7 @@ section.feature{
 
 section.book{
 	background: $orange;
-	padding: 5rem;
+	padding: 3rem;
 	h2{
 		color: white;
 	}
@@ -503,7 +506,7 @@ section.book{
 		justify-content: center;
 		input{
 			border-radius: 5px;
-			width: 15rem;
+			width: 18rem;
 			border: none;
 			padding: 0 1rem;
 			height: 3.5rem;
@@ -512,7 +515,7 @@ section.book{
 			appearance: none;
 			padding: 0 1rem;
 			height: 3.5rem;
-			width: 15rem;
+			width: 18rem;
 			color: $lightgrey;
 			border: none;
 			background: white;
