@@ -150,6 +150,11 @@ footer{
 		text-align: left;
 		font-size: 6rem;
 	}
+	.footerBtn{
+		margin: 0 auto;
+		text-align: center;
+		padding-bottom: 7rem;
+	}
 }
 
 .footerFlex{
@@ -178,33 +183,38 @@ Buttons
 ====================================
 */
 
-.mainBtn {
-
-	/* Background: */
-	background: $orange;
-	border: 1px solid $orange;
-	border-radius: 40px;
-	/* WORK WITH US: */
+.btn{
+	background: transparent;
 	@include fontSize(11);
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
-	color: #FFFFFF;
 	letter-spacing: 1.83px;
 	line-height: 13px;
 	text-transform: uppercase;
 	padding: 2em 7em;
-
-	:hover {
-
-	}
+	transition: background 0.8s;
+	border-radius: 40px;
 
 }
 
+.mainBtn {
+	/* Background: */
+	border: 1px solid white;
+	/* WORK WITH US: */
+	color: #FFFFFF;
+	&:hover, &:focus {
+		background: $orange;
+	}
+}
+
 .secondBtn {
-
+	border: 1px solid $orange;
+	color: $orange;
+	transition: background 0.8s, color 0.8s;
 	
-	:hover {
-
+	&:hover, &:focus{
+		color: white;
+		background: $orange;
 	}
 
 }

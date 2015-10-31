@@ -24,7 +24,7 @@ include('headerSplash.php');  ?>
 				<div class="heroTitle">
 					<h3><?php echo get_bloginfo( 'description' )?></h3>
 					<h1>PureLife</h1>
-					<button class="mainBtn">Work with us</button>
+					<button class="mainBtn btn">Work with us</button>
 				</div>
 			</div>
 		</div>
@@ -114,7 +114,7 @@ include('headerSplash.php');  ?>
 			<option value="afternoon">Afternoon</option>
 			<option value="evening">Evening</option>
 		</select>
-		<button class="goBtn">Go</button>
+		<button class="goBtn btn">Go</button>
 
 	</form>
 
@@ -186,7 +186,7 @@ include('headerSplash.php');  ?>
 
 <section class="closing">
 	<h5>Start working on your body today; with our individual fitness program, in less than 90 days you will see a completely different person in the mirror!</h5>
-	<button class="secondBtn">Get in Touch</button>
+	<button class="btn secondBtn">Get in Touch</button>
 </section>
 
 <?php get_footer(); ?>
