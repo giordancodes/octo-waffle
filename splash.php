@@ -127,16 +127,16 @@ include('headerSplash.php');  ?>
 	
 	<ul class="blogLatest row">
 
-	<?php $newAwesomeQuery = new WP_Query(array(
+	<?php $latestQuery = new WP_Query(array(
 		'posts_per_page' => 3
 	)); ?>
 
-	<?php if ( $newAwesomeQuery->have_posts() ) : ?>
-		<?php while ( $newAwesomeQuery->have_posts() ) : $newAwesomeQuery->the_post(); ?>
+	<?php if ( $latestQuery->have_posts() ) : ?>
+		<?php while ( $latestQuery->have_posts() ) : $latestQuery->the_post(); ?>
 			
 			<li>
 				<a href="<?php the_permalink(); ?>">
-					<?php echo get_the_post_thumbnail(); ?>
+					<?php echo the_post_thumbnail('medium'); ?>
 					<p class="blogTitle"><?php the_title(); ?></p>
 					<p><?php the_excerpt(); ?></p>
 				</a>

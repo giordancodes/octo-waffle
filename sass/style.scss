@@ -570,6 +570,8 @@ section.latest{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
 	li{
 		width: calc(33.33% - 2rem);
 		border-radius: 1em;
@@ -676,6 +678,10 @@ header .vanilla{
 	}
 	.sidebar{
 		width: 30%;
+		padding: 1rem;
+		h3{
+			color: $lightgrey;
+		}
 	}
 }
 
@@ -728,5 +734,45 @@ header .vanilla{
 			color: $orange;
 			background: white;
 		}
+	}
+}
+
+// style for author widget
+.widget_ns_aw_info{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	h3{
+		color: $lightgrey;
+		text-align: center;
+	}
+	.nsaw-inner-wrap-name{
+		background: transparent;
+		b{
+			color: $lightgrey;
+			font-family: 'Raleway', sans-serif;
+			font-size: 1.8rem;
+			font-weight: 400;
+		}
+	}
+	.nsaw-image{
+		float: none;
+		text-align: center;
+	}
+	.nsaw-post{
+		text-align: center;
+	}
+	.nsaw-social{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		a{
+		}
+	}
+	.fa{
+		border:none;
+		border-radius: 50%;
 	}
 }
