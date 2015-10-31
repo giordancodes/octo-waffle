@@ -106,15 +106,17 @@ include('headerSplash.php');  ?>
 
 <section class="book">
 	
-	<form action="">
+	<form class="container" action="">
 		<h2>Request a Booking</h2>
-		<input type="text" id="bookDate">
-		<select name='bookTime' id='bookTime'>
-			<option value="morning" selected>Morning</option>
-			<option value="afternoon">Afternoon</option>
-			<option value="evening">Evening</option>
-		</select>
-		<button class="goBtn btn">Go</button>
+		<form action="">
+			<input type="text" placeholder="dd/mm/yy" id="bookDate">
+			<select name='bookTime' placeholder="Select Time" id='bookTime'>
+				<option value="morning" selected>Morning</option>
+				<option value="afternoon">Afternoon</option>
+				<option value="evening">Evening</option>
+			</select>
+			<button class="goBtn">Go</button>
+		</form>
 
 	</form>
 
