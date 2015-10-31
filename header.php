@@ -24,7 +24,9 @@
   <div class="vanilla">
     <div class="topNav wrapper">
       <div class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></div>
-      <h1><?php echo get_bloginfo( 'name' ) ?></h1>
+      <h1><a href="
+      <?php echo site_url() ?>
+      "><?php echo get_bloginfo( 'name' ) ?></a></h1>
       <div class="social">
         <ul>
           <li><a href="#"><i class="fa fa-facebook"></i></a></li>

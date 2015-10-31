@@ -662,7 +662,7 @@ header .vanilla{
 		width: 70%;
 		justify-content: center;
 		align-items: center;
-		padding: 2rem;
+		padding: 4rem;
 		.entry-meta{
 			font-size: 1.4rem;
 			padding: 1rem 0;
@@ -775,4 +775,13 @@ header .vanilla{
 		border:none;
 		border-radius: 50%;
 	}
+}
+
+.fa{
+	color: white;
+	transition: color .8s;
+}
+
+.fa:hover, .fa:focus{
+	color: $orange;
 }
