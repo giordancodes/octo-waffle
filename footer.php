@@ -34,6 +34,7 @@
 			<div class="rightThird">
 				<p class='titles'><?php the_field('subscribe-title')?></p>
 				<p><?php the_field('subscribe-info')?></p>
+				<input type="text" placeholder="Email">
 			</div>
 			<?php endwhile; ?>
 
