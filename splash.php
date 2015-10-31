@@ -209,9 +209,13 @@ include('headerSplash.php');  ?>
 				
 				<?php while ($closingQuery->have_posts()) : $closingQuery->the_post(); ?>
 				<div class="closingFlex">
-					<img src="<?php the_field('closing-image') ?>" alt="">
-					<h5><?php the_field('closing-description') ?></h5>
-					<button class="btn secondBtn"><?php the_field('closing-button') ?></button>
+					<div class="closingLeft">
+						<img src="<?php the_field('closing-image') ?>" alt="">
+					</div>
+					<div class="closingRight">
+						<h5><?php the_field('closing-description') ?></h5>
+						<button class="btn secondBtn"><?php the_field('closing-button') ?></button>
+					</div>
 				</div>
 				<?php endwhile; ?>
 		

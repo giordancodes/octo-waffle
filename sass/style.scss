@@ -603,7 +603,21 @@ section.testimonials{
 
 section.closing{
 	background: white;
-	padding: 15rem;
+	padding-top: 5rem;
+	img{
+		max-height: 500px;
+	}
+}
+.closingFlex{
+	display: flex;
+	flex-wrap: wrap;
+	.closingLeft{
+		width: 35%;
+	}
+	.closingRight{
+		width: 65%;
+		padding: 3rem;
+	}
 }
 .gallery-cell {
 	width: 100%;
