@@ -187,8 +187,42 @@ include('headerSplash.php');  ?>
 </section>
 
 <section class="closing container">
+
+	<?php 
+
+		$closingQuery = new WP_Query(
+					array(
+							'posts_per_page' => 1,
+							'post_type' => 'closing',
+							'post_not_in' => array( $post->ID )
+						)
+				);
+		
+		 ?>
+		
+		 <?php 
+		
+		 	if ($closingQuery->have_posts()) : 
+		
+		  ?>
+		
+				
+				<?php while ($closingQuery->have_posts()) : $closingQuery->the_post(); ?>
+				<div class="closingFlex">
+					<img src="<?php the_field('closing-image') ?>" alt="">
+					<h5><?php the_field('closing-description') ?></h5>
+					<button class="btn secondBtn"><?php the_field('closing-button') ?></button>
+				</div>
+				<?php endwhile; ?>
+		
+			<?php endif; ?>
+
+	 ?>
+<!-- 
+
 	<h5>Start working on your body today; with our individual fitness program, in less than 90 days you will see a completely different person in the mirror!</h5>
-	<button class="btn secondBtn">Get in Touch</button>
+
+ -->
 </section>
 
 <?php get_footer(); ?>
