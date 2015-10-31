@@ -7,6 +7,7 @@
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.1.1/flickity.min.css" media="screen">
   <link href='https://fonts.googleapis.com/css?family=Great+Vibes|Raleway:400,700,600,300,200,500|Merriweather' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
@@ -20,17 +21,19 @@
 <body <?php body_class(); ?>>
 
 <header>
-  <div class="container">
-    <h1>
-      <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
-        <?php bloginfo( 'name' ); ?>
-      </a>
-    </h1>
-
-    <?php wp_nav_menu( array(
-      'container' => false,
-      'theme_location' => 'primary'
-    )); ?>
+  <div class="vanilla">
+    <div class="topNav wrapper">
+      <div class="hamburger"><a href="#"><i class="fa fa-bars"></i></a></div>
+      <h1><?php echo get_bloginfo( 'name' ) ?></h1>
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+   </div>
   </div> <!-- /.container -->
 </header><!--/.header-->
 

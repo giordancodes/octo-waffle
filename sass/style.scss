@@ -626,3 +626,18 @@ section.closing{
 .gallery-cell {
 	width: 100%;
 }
+
+// ====================
+// Vanilla Header
+// ====================
+
+header .vanilla{
+	background: $seafoam;
+	padding: 2rem;
+	.topNav{
+		align-items: center;
+	}
+	h1{
+		font-size: 6rem;
+	}
+}
