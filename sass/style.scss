@@ -553,6 +553,7 @@ select{
 	color: $lightgrey;
 	border: none;
 	background: white;
+	font-size: 1.6rem;
 }
 
 section.latest{
@@ -708,6 +709,7 @@ header .vanilla{
 
 #widgetBook{
 	border-radius: 10px;
+	width: 100%;
 	h2{
 		color: white;
 	}
@@ -731,11 +733,13 @@ header .vanilla{
 		color: $lightgrey;
 		border: none;
 		background: white;
+		// font-size: 1.6rem;
 	}
 	.mainBtn{
 		color: white;
 		background: transparent;
 		transition: color .8s, background .8s;
+		padding: 2rem 4rem;
 		&:hover, &:active{
 			color: $orange;
 			background: white;
@@ -817,7 +821,7 @@ header .vanilla{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	background: rgba(0,0,0,0.8);
+	background:rgba(0,0,0,0.7);
 	z-index: 999;
 	transition: ease-in-out .8s opacity;
 	.menu{
@@ -841,6 +845,21 @@ header .vanilla{
 	top: 5%;
 	right: 5%;
 	font-size: 4rem;
+	border: 2px solid white;
+	border-radius: 50%;
+	padding: 1rem 2.5rem;
+	background:transparent;
+	transition: 0.8s color, .8s background;
+	&:hover, &:focus{
+		background: rgba(255,255,255, 0.3);
+	}
+	a{
+		color: $seafoam;
+		&:hover, &:focus{
+			color: $lightblue;
+			
+		}
+	}
 }
 
 .visible{
