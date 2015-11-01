@@ -140,9 +140,12 @@ p {
 
 }
 
-.blog a {
-
-
+a {
+	color: white;
+	transition: .8s color;
+	&:hover, &:focus{
+		color: $orange;
+	}
 }
 
 footer{
@@ -228,7 +231,7 @@ Buttons
 	color: white;
 	background: transparent;
 	transition: color .8s, background .8s;
-	&:hover, &:active{
+	&:hover, &:focus{
 		color: $orange;
 		background: white;
 	}
@@ -717,8 +720,11 @@ header .vanilla{
 	input, select, .mainBtn{
 		margin: 2rem 0;
 	}
+	input{
+		width: 18rem;
+	}
 	select{
-		width: 30rem;
+		// width: 30rem;
 		appearance: none;
 		padding: 0 1rem;
 		height: 3.5rem;
@@ -763,11 +769,19 @@ header .vanilla{
 	}
 	.nsaw-post{
 		text-align: center;
+		a{
+			color: $orange;
+			transition: .8s color;
+			&:hover, &:focus{
+				color: $lightblue;
+			}
+		}
 	}
 	.nsaw-social{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
+		padding: 1rem;
 		a{
 		}
 	}
@@ -837,4 +851,18 @@ header .vanilla{
 .invisible{
 	visibility: hidden;
 	opacity: 0;
+}
+
+.textwidget{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 2rem 0;
+	.fa{
+		color: $lightgrey;
+		transition: .8s color;
+		&:hover, &:focus{
+			color: $orange;
+		}
+	}
 }

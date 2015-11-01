@@ -12,7 +12,7 @@ $(function(){
 
 	$( '#navX' ).on( 'click', function(e){
 		e.preventDefault();
-		$( '#hiddenNav' ).removeClass('visible').addClass('invisible').fadeOut();
+		$( '#hiddenNav' ).removeClass('visible').addClass('invisible');
 		
 	});
 
