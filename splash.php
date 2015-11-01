@@ -185,7 +185,7 @@ include('headerSplash.php');  ?>
 					<div class="closingLeft">
 						<img src="<?php the_field('closing-image') ?>" alt="">
 					</div>
-					<div class="closingRight">
+					<div class="closingRight column">
 						<h5><?php the_field('closing-description') ?></h5>
 						<button class="btn secondBtn"><?php the_field('closing-button') ?></button>
 					</div>

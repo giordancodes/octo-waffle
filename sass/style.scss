@@ -574,6 +574,7 @@ section.latest{
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	padding: 0;
 	align-items: center;
 	justify-content: center;
 	li{
@@ -599,7 +600,7 @@ section.latest{
 }
 
 section.testimonials{
-	background: url(../images/patternBackground@2x.png);
+	background: $seafoam;
 	padding: 5rem 10rem;
 	text-align: center;
 	img{
@@ -889,4 +890,69 @@ header .vanilla{
 .page h5{
 	color: $lightgrey;
 	text-align: left;
+}
+
+.content{
+	display: flex;
+	flex-wrap: wrap;
+	article{
+		width: 90%;
+		img{
+			margin-bottom: 6rem;
+			display: block;
+		}
+		p{
+			text-align: left;
+		}
+	}
+}
+
+@media all and (max-width: 940px) {
+	.blogLatest{
+		flex-direction: column;
+		li{
+			width: 80%;
+			padding: 1rem 0;
+			margin: 3rem 0;
+		}
+	}
+	section.testimonials{
+		width: 100%;
+		padding: 5rem 3rem;
+	}
+}
+
+
+@media all and (max-width: 860px) {
+	.featureFlex{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		article{
+			width: 80%;
+		}
+	}
+	section.book{
+		h2{
+			margin-bottom: 4rem;
+		}
+		form{
+			flex-direction: column;
+			select{
+				margin: 3rem 0;
+			}
+		}
+	}
+	section.testimonials{
+		p{
+			width: 85%;
+		}
+	}
+}
+
+@media all and (max-width: 590px) {
+	section.closing{
+		
+	}
 }
