@@ -6,6 +6,19 @@
 * Author: HackerYou
 * Author URI: http://hackeryou.com
 */
+/*
+====================================
+Default Colours
+====================================
+*/
+
+$seafoam: #A5DBD8;
+$orange: #FD6900;
+$lightblue: #CDE5ED;
+$darkgrey: #3C3D41;
+$lightgrey: #656B6F;
+$lightergrey: #E8E8E8;
+$red: #D0021B;
 
 @import 'normalize';
 @import 'typography';
@@ -22,19 +35,6 @@
 	font-size: ($fontSize / 10) * 1rem;
 }
 
-/*
-====================================
-Default Colours
-====================================
-*/
-
-$seafoam: #A5DBD8;
-$orange: #FD6900;
-$lightblue: #CDE5ED;
-$darkgrey: #3C3D41;
-$lightgrey: #656B6F;
-$lightergrey: #E8E8E8;
-$red: #D0021B;
 
 
 /*
@@ -353,6 +353,7 @@ Header
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 50px 10px 10px 10px;
+	align-items: center;
 }
 .hamburger .fa {
 	color: white;
@@ -407,6 +408,7 @@ html {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 body {
@@ -951,8 +953,28 @@ header .vanilla{
 	}
 }
 
-@media all and (max-width: 590px) {
-	section.closing{
-		
+@media all and (max-width: 360px) {
+	.heroTop{
+		padding-top: 0;
+		.wrapper{
+			padding-bottom: 0;
+			padding-top: 1rem;
+		}
+		.social li{
+			padding: 0 1rem;
+		}
+	}
+	.heroTitle {
+		position: relative;
+		h3{
+			line-height: 2;
+		}
+		button{
+			margin-top: 8rem;
+		}
+	}
+	.hero h1{
+		font-size: 6rem;
+		padding-top: 3rem;;
 	}
 }
