@@ -375,6 +375,9 @@ Header
 	    font-size: 20px;
 	    margin: 0;
 	    line-height: 0px;
+		&:last-child{
+			padding-right: 0;
+		}
 	}
 }
 
@@ -1042,9 +1045,14 @@ header .vanilla{
 	header{
 		.vanilla {
 			padding: 0;
-		}
-		.topNav {
-			padding: 0;
+			.topNav {
+				padding: 0 2rem;
+				h1{
+					order: 1;
+					width: 100%;
+					padding: 2rem 0;
+				}
+			}
 		}
 	}
 	.sidebar{
