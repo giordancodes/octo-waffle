@@ -161,6 +161,11 @@ footer{
 	}
 }
 
+.comment-meta{
+	border-radius: 5px;
+	padding: 2rem;
+}
+
 .footerFlex{
 	align-items: flex-start;
 	justify-content: space-between;
@@ -1049,8 +1054,14 @@ header .vanilla{
 		.leftSide{
 			width: 100%;
 			padding: 0;
+			h2{
+				font-size: 4rem;
+			}
 			.content{
 				display: block;
+				article img{
+					margin-bottom: 0;
+				}
 			}
 		}
 	}
