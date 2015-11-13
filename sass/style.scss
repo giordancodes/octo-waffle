@@ -977,4 +977,35 @@ header .vanilla{
 		font-size: 6rem;
 		padding-top: 3rem;;
 	}
+	.serviceSection{
+		flex-direction: column;
+		.descItem {
+			width: 100%;
+			&:nth-child(2){
+				margin: 0;
+			}
+		}
+	}
+	section.feature{
+		padding: 0;
+		.featureFlex article{
+			width: 100%;
+		}
+	}
+	section.latest{
+		padding: 0;
+	}
+	.blogLatest {
+		li{
+			width: 90%;
+		}	
+	}
+	section.testimonials{
+		padding: 6rem 0;
+	}
+	section.closing{
+		img{
+			display: none;
+		}
+	}
 }
