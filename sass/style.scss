@@ -73,7 +73,7 @@ h2 {
 	font-weight: 700;
 	color: $darkgrey;
 	letter-spacing: 2.54px;
-	line-height: 16px;
+	line-height: 1.5;
 	text-align: center;
 }
 
@@ -756,7 +756,7 @@ header .vanilla{
 		background: transparent;
 		transition: color .8s, background .8s;
 		padding: 2rem 4rem;
-		&:hover, &:active{
+		&:hover, &:focus{
 			color: $orange;
 			background: white;
 		}
