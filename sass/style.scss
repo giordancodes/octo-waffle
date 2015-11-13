@@ -1049,6 +1049,9 @@ header .vanilla{
 		.leftSide{
 			width: 100%;
 			padding: 0;
+			.content{
+				display: block;
+			}
 		}
 	}
 	.blogSingle{
