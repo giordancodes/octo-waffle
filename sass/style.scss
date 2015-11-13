@@ -556,6 +556,7 @@ select{
 	border: none;
 	background: white;
 	font-size: 1.6rem;
+	border-radius: 5px;
 }
 
 section.latest{
@@ -992,6 +993,11 @@ header .vanilla{
 			width: 100%;
 		}
 	}
+	section.book{
+		form input, select{
+			width: 100%;
+		}
+	}
 	section.latest{
 		padding: 0;
 	}
@@ -1004,8 +1010,15 @@ header .vanilla{
 		padding: 6rem 0;
 	}
 	section.closing{
-		img{
+		padding-top: 0;
+		.closingLeft{
 			display: none;
 		}
+		.closingFlex .closingRight{
+			width: 100%;
+		}
+	}
+	footer{
+		padding: 2rem 0 0 0;
 	}
 }
