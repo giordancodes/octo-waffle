@@ -836,6 +836,7 @@ header .vanilla{
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			padding: 0;
 			li{
 				padding: 2rem 0;
 				font-size: 4rem
@@ -955,6 +956,7 @@ header .vanilla{
 }
 
 @media all and (max-width: 360px) {
+//	splash page splash page splash page splash page splash page splash page 
 	.heroTop{
 		padding-top: 0;
 		.wrapper{
@@ -973,6 +975,9 @@ header .vanilla{
 		button{
 			margin-top: 8rem;
 		}
+	}
+	.hero {
+		padding-top: 0;
 	}
 	.hero h1{
 		font-size: 6rem;
@@ -1020,5 +1025,23 @@ header .vanilla{
 	}
 	footer{
 		padding: 2rem 0 0 0;
+	}
+//	about/blog pages about/blog pages about/blog pages about/blog pages 
+	header{
+		.vanilla {
+			padding: 0;
+		}
+		.topNav {
+			padding: 0;
+		}
+	}
+	.sidebar{
+		display: none;
+	}
+	.main{
+		.leftSide{
+			width: 100%;
+			padding: 0;
+		}
 	}
 }
