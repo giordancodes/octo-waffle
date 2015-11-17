@@ -179,7 +179,7 @@ footer{
 input{
 		border-radius: 5px;
 		border: none;
-		padding: 1.5rem;
+		padding: 2rem 1.5rem;
 		width: 30rem;
 		height: 3.5rem;
 		font-size: 1.6rem;
@@ -964,6 +964,17 @@ header .vanilla{
 		p{
 			width: 85%;
 		}
+	}
+	#widgetBook {
+		input, select{
+			width: 100%;
+		}
+	}
+	.main .leftSide{
+		width: 65%;
+	}
+	.main .sidebar{
+		width: 35%;
 	}
 }
 
